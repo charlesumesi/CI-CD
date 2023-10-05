@@ -1,15 +1,4 @@
 # Version 1
-# name: Hello versions
-# on: [push]
-# jobs:
-#     print-hello:
-#         runs-on: ubuntu-latest
-#         steps:
-#             - uses: actions/checkout@v2
-#             - uses: actions/setup-python@v2
-#             - run: python hello.py
-            
-# Version 2
 name: Hello versions
 on: [push]
 jobs:
@@ -18,10 +7,21 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - uses: actions/setup-python@v2
-            - uses: jannekem/run-python-script-action@v1
-              with:
-                script: |
-                    print("Hello CI")
-                    def test(acw):
-                        return acw + " - Just starting gently"
-                    test("Hello CI")
+            - run: python hello.py
+            
+# Version 2
+# name: Hello versions
+# on: [push]
+# jobs:
+#     print-hello:
+#         runs-on: ubuntu-latest
+#         steps:
+#             - uses: actions/checkout@v2
+#             - uses: actions/setup-python@v2
+#             - uses: jannekem/run-python-script-action@v1
+#               with:
+#                 script: |
+#                     print("Hello CI")
+#                     def test(acw):
+#                         return acw + " - Just starting gently"
+#                     print(test("Hello CI"))

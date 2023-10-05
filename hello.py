@@ -5,4 +5,4 @@ print('Hello CI')
 def test(acw):
     return acw + " - Just starting gently"
 
-test('Hello CI')
+print(test('Hello CI'))
