@@ -9,8 +9,7 @@ jobs:
             - uses: actions/setup-python@v2
             - run: |
                 python hello.py
-                echo "Store: ${{ github.event.inputs.myInput }}"
-                INPUT_STORE=${{ github.event.inputs.myInput }} python main1.py
+                python main1.py
             
 # Version 2
 # name: Hello versions
