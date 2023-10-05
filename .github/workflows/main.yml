@@ -7,7 +7,9 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - uses: actions/setup-python@v2
-            - run: python hello.py
+            - run: |
+                python hello.py
+                python main1.py
             
 # Version 2
 # name: Hello versions

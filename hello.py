@@ -6,3 +6,4 @@ def test(acw):
     return acw + " - Just starting gently"
 
 print(test('Hello CI'))
+print('\nNow stepping things up')
