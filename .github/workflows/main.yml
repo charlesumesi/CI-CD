@@ -1,15 +1,15 @@
 # Version 1
-# name: Hello versions
-# on: [push]
-# jobs:
-#     print-hello:
-#         runs-on: ubuntu-latest
-#         steps:
-#             - uses: actions/checkout@v2
-#             - uses: actions/setup-python@v2
-#             - run: |
-#                 python hello.py
-#                 python main1.py
+name: Hello versions
+on: [push]
+jobs:
+    print-hello:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - uses: actions/setup-python@v2
+            - run: |
+                python hello.py
+                python main1.py --git
             
 # Version 2
 # name: Hello versions
@@ -29,18 +29,18 @@
 #                     print(test("Hello CI"))
 
 # Version 3
-name: Hello versions
-on: 
-    workflow_dispatch:
-        inputs:
-            message:
-                required: false
-jobs:
-    print-hello:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v2
-            - uses: actions/setup-python@v2
-            - run: |
-                python hello.py
-                python main1.py
+# name: Hello versions
+# on: 
+#     workflow_dispatch:
+#         inputs:
+#             message:
+#                 required: false
+# jobs:
+#     print-hello:
+#         runs-on: ubuntu-latest
+#         steps:
+#             - uses: actions/checkout@v2
+#             - uses: actions/setup-python@v2
+#             - run: |
+#                 python hello.py
+#                 python main1.py
