@@ -10,6 +10,8 @@ jobs:
             - run: |
                 python hello.py
                 python main1.py --git
+# deploy:
+    # Only used for continuous deployment, see example on https://www.educative.io/answers/how-to-set-up-continuous-deployment-using-github-actions
             
 # Version 2
 # name: Hello versions
