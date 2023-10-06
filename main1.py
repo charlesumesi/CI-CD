@@ -11,6 +11,7 @@ han = person.Person('Han', 'Solo', '30', 'man', 'flying spaceships')
 
 print(han.just_firstandlast())
 han.full()
+print('\nTime to check Han\'s credit card details!')
 
 
 if __name__ == "__main__":
